@@ -4,9 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <EditText
+        android:id="@+id/edittext_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hallo Welt!" />
-
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/name"
+    />
+    <Button
+        android:id="@+id/button_greet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/greet_button_text"
+    />
+    <TextView
+        android:id="@+id/text_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

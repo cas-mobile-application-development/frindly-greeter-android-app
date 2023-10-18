@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Frindly Greeter</string>
+    <string name="name">Name</string>
+    <string name="greet_button_text">Say Hi!</string>
 </resources>
