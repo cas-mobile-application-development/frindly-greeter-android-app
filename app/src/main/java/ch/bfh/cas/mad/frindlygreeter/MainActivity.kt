@@ -21,7 +21,12 @@ class MainActivity : AppCompatActivity() {
         val textViewOutput = findViewById<TextView>(R.id.text_output)
 
         buttonGreet.setOnClickListener {
-            textViewOutput.text = getString(R.string.greeting, edittextName.text)
+            val name = edittextName.text.toString()
+            if (name.isBlank()) {
+                edittextName.error = getString(R.string.empty_name_error)
+            } else {
+                textViewOutput.text = getString(R.string.greeting, name)
+            }
         }
     }
 }

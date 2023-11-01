@@ -3,4 +3,5 @@
     <string name="name">Name</string>
     <string name="greet_button_text">Say Hi!</string>
     <string name="greeting">Hi %1$s!</string>
+    <string name="empty_name_error">Der Name darf nicht leer sein.</string>
 </resources>
