@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val textViewOutput = findViewById<TextView>(R.id.text_output)
 
         buttonGreet.setOnClickListener {
-            textViewOutput.text = "Hi ${edittextName.text}!"
+            textViewOutput.text = getString(R.string.greeting, edittextName.text)
         }
     }
 }
